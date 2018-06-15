@@ -316,7 +316,8 @@ if(breakit==0){
 		
 		#E-STEP 2
 		#UPDATE Z, W
-      delta <- deltaup(x,mug,sigma,sigmainv,G,n,delta)
+      duptest <- try(delta <- deltaup(x,mug,sigma,sigmainv,G,n,delta), silent=TRUE)
+      if(class(duptest)=="try-error"){break}
 			suppressWarnings(zup <- zupdate(x,G,pig,dfnewg,p,yg,q,betag,lg,mug,sigmainv,n,clas,kno,known,unkno,delta))
 #print(zmat)
       zmat <- zup$zmat

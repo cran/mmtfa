@@ -2,3 +2,7 @@ export(mmtfa)
 import(parallel)
 import(matrixStats)
 import(mvnfast)
+importFrom("grDevices", "rainbow", "rgb")
+importFrom("graphics", "contour", "curve", "par", "plot", "title")
+importFrom("stats", "cov.wt", "density", "dnorm", "kmeans",
+             "mahalanobis", "runif", "uniroot")

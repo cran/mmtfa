@@ -1,3 +1,13 @@
-mmtfa version 0.1 2015-06-13:
+mmtfa version 0.2 2018-06-11:
+- Corrected check on number of parameters
+- Fixed bug in parallel implementation
 
+mmtfa version 0.2 2016-10-21:
+- Added check for failure of maha() from mvnfast library that would lead to mmtfa failure
+- Updated email address
+
+mmtfa version 0.1.1 2015-06-14:
+- Bug fix
+
+mmtfa version 0.1 2015-06-13:
 - Original upload!

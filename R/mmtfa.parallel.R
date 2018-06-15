@@ -60,8 +60,8 @@ mmtfa.parallel <-function (x, Gs, Qs, clas, init, scale, models,
   ### when maxG is larger than length of G error
   biccube <- iclcube <- array(-Inf,dim=c(length(models),length(Qs),length(Gs)),dimnames=list(origmod,paste("Q=",Qs,sep=""),paste("G=",Gs,sep="")))
   for(i in 1:length(bic.vec)){
-    biccube[modvec[i], qvec[i], gvec[i]] <- bic.vec[i]
-    iclcube[modvec[i], qvec[i], gvec[i]] <- icl.vec[i]
+    biccube[modvec[i], paste("Q=",qvec[i],sep=""), paste("G=",gvec[i],sep="")] <- bic.vec[i]
+    iclcube[modvec[i], paste("Q=",qvec[i],sep=""), paste("G=",gvec[i],sep="")] <- icl.vec[i]
   }
   final <- runlist[[which.max(bic.vec)]]
   final$iclresults$allicl <- iclcube

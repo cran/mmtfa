@@ -4,13 +4,14 @@ mmtfa <- function(x, Gs=1:4, Qs=1:2, clas=0, init="kmeans", scale=TRUE, models =
   modold  <- modgen$modold
   p <- ncol(x)
   n <- nrow(x)
-  if(any(Qs>round(p/2))){
-    Qs <- Qs[Qs<=round(p/2)]
+  if(any((p-Qs)^2 <= (p+Qs))){
+    Qs <- Qs[(p-Qs)^2 > (p + Qs)]
     if(length(Qs)<1){
-      stop("No value of Qs meets criteria: Number of factors cannot exceed half dimension size.")
+      stop("No value of Qs meets criteria:  (p-Qs)^2 <= p+Qs.")
     }
     else{
-      warning(paste("Number of factors cannot exceed half dimension size: Q =", paste(Qs[Qs<=round(p/2)], collapse=", "), "run"))
+      warning(paste("Number of factors have to be such that (p-Qs)^2 <= p+Qs",
+                    paste(Qs[(p-Qs)^2 > (p + Qs)], collapse=", "), "run"))
     }
   }
   

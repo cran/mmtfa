@@ -137,20 +137,20 @@ See package manual \code{\link{MMtFA}}
 ###Note that only one model is run for each example
 ###in order to reduce computation time
 
-#Clustering old faithful data with hard random start
-tfaith <- mmtfa(faithful, models="UUUU", Gs=1:3, Qs=1, init="hard")
+#Clustering iris data with hard random start
+tirisr <- mmtfa(iris[,-5], models="UUUU", Gs=1:3, Qs=1, init="hard")
 
-#Clustering old faithful with hierarchical starting values
+#Clustering iris data with hierarchical starting values
 initial_list <- list()
-clustree <- hclust(dist(faithful))
+clustree <- hclust(dist(iris[,-5]))
 for(i in 1:3){
 	initial_list[[i]] <- cutree(clustree,i)
 }
-tfaith <- mmtfa(faithful, models="CUCU", Gs=1:3, Qs=1, init=initial_list)
+tirish <- mmtfa(iris[,-5], models="CUCU", Gs=1:3, Qs=1, init=initial_list)
 
 #Classification with the iris data set via percentage of data taken to have known membership
-tiris <- mmtfa(iris[,-5], Qs=1:2, models="CUIU", init="uniform",clas=50, known=iris[,5])
-tiris$tab
+tirisc <- mmtfa(iris[,-5], Qs=1, models="CUIU", init="uniform",clas=50, known=iris[,5])
+tirisc$tab
 
 }
 

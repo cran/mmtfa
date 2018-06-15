@@ -1,6 +1,6 @@
-99a4f68e40eb30ceaa065cd3e16e58bd *ChangeLog
-62277bd4eb37dbcd45aa84587e9e2293 *DESCRIPTION
-bc278cfcebaf69f75a3751f312598f74 *NAMESPACE
+d36bbcc6fc351e3ad29c51321718153b *ChangeLog
+407869ea9785d833b35f43a683f4fac2 *DESCRIPTION
+35d121c8b60db418bf31a8ff22eb668b *NAMESPACE
 fbdb352359f225e59d5dd770eb510e75 *R/BICcalc.R
 22ce02e58c266e42759376afd2a29599 *R/ICLcalc.R
 ac41b72fa6daa0bd744f97b5cec00ad0 *R/betagup.R
@@ -15,9 +15,9 @@ af841ae79af350ba371cc1a2e67bd44c *R/lginitc.R
 ffccb22ef605779831a225ee1ef09433 *R/lginitu.R
 65801c91845374d413745ed4a2c9e7f5 *R/lgupdate.R
 07d1ab18891e97a854ffbd137a016f39 *R/mmtfa-internal.R
-bd2dbd24c0eb5d9e19ebce5e1e2dc5e6 *R/mmtfa.R
-9c183bb1b06da66018a378cacf66f48d *R/mmtfa.parallel.R
-9f69711b75cf95a7bcd81d898f197b0a *R/mmtfaEM.R
+ff45e6705bf395f7d34e8ad56d6e7d63 *R/mmtfa.R
+30d2566794909a04c67123f44742ab4a *R/mmtfa.parallel.R
+828186ef2a96232657316415f34f3e0d *R/mmtfaEM.R
 3fd8102ca7022b42cccdbf8b634bcb40 *R/modelgen.R
 a9e1f4da06cac594e4b2d7a953ebfe4a *R/muginit.R
 83a39b9511b91a53c6187b9f27461335 *R/mugupdate.R
@@ -42,5 +42,5 @@ c160c5493a2679a037606569dd7c8742 *R/yginitu.R
 0d6a8956da70234ddd5235546ea9409b *R/yginvup.R
 b967a6b9835f277f30a6084d64bec97f *R/ygupdate.R
 11022d81672bae056ecfd8974c6d349b *R/zupdate.R
-f70cd7e9213c18fcd252e5ef66617363 *man/mmtfa-package.Rd
-4970ff24380b2f6e862f40ed1f67d0fd *man/mmtfa.Rd
+ad13d0e7fa377051565ddaa143ab727e *man/mmtfa-package.Rd
+c6a8012410baca5baef8bd199e24d749 *man/mmtfa.Rd

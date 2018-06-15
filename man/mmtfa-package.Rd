@@ -13,8 +13,8 @@ Fits mixtures of multivariate modified t-factor analyzers via the alternating ex
 \tabular{ll}{
 Package: \tab mmtfa\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2015-06-13\cr
+Version: \tab 0.3\cr
+Date: \tab 2018-06-11\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -22,7 +22,7 @@ LazyLoad: \tab yes\cr
 \author{
 Jeffrey L. Andrews, Paul D. McNicholas, and Mathieu Chalifour
 
-Maintained by: Jeffrey L. Andrews <jeffrey.andrews@macewan.ca>
+Maintained by: Jeffrey L. Andrews <jeff.andrews@ubc.ca>
 }
 \references{
 Andrews JL and McNicholas PD (2011a), 'Extending mixtures of multivariate t-factor analyzers'.
